@@ -1,0 +1,211 @@
+/* GENERAL */
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+/* HEADER */
+.encabezado{
+background:#2e7d32;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* MENU */
+.menu a{
+color:white;
+margin:10px;
+text-decoration:none;
+position:relative;
+}
+
+/* EFECTO LINEA */
+.menu a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:white;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+/* TITULO */
+.titulo{
+text-align:center;
+margin-top:20px;
+}
+
+/* CONTENEDOR FORMULARIO */
+.contenedor-formulario{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+/* FORMULARIO */
+.formulario{
+background:white;
+padding:20px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:10px;
+width:300px;
+transition:0.3s;
+}
+
+/* EFECTO FORMULARIO */
+.formulario:hover{
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* INPUT Y TEXTAREA */
+.formulario input,
+.formulario textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+outline:none;
+transition:0.3s;
+}
+
+/* EFECTO INPUT */
+.formulario input:focus,
+.formulario textarea:focus{
+border:1px solid #2e7d32;
+}
+
+/* BOTON */
+.formulario button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.formulario button:hover{
+background:#1b5e20;
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+background:#1b1f1b;
+color:#ccc;
+padding:40px;
+}
+
+/* PARTE SUPERIOR */
+.footer-top{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+gap:20px;
+}
+
+/* SECCIONES */
+.footer-section{
+min-width:150px;
+}
+
+.footer-section h4{
+color:white;
+margin-bottom:10px;
+}
+
+.footer-section ul{
+list-style:none;
+padding:0;
+}
+
+.footer-section ul li{
+margin-bottom:5px;
+}
+
+.footer-section ul li a{
+color:#ccc;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-section ul li a:hover{
+color:#2e7d32;
+padding-left:5px;
+}
+
+/* FORMULARIO FOOTER */
+.formulario-footer{
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-top:10px;
+}
+
+/* INPUT Y TEXTAREA */
+.formulario-footer input,
+.formulario-footer textarea{
+padding:8px;
+border:none;
+border-radius:5px;
+}
+
+/* BOTON FOOTER */
+.formulario-footer button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.formulario-footer button:hover{
+background:#1b5e20;
+transform:scale(1.05);
+}
+
+/* PARTE INFERIOR */
+.footer-bottom{
+margin-top:30px;
+border-top:1px solid #444;
+padding-top:10px;
+text-align:center;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+.encabezado{
+flex-direction:column;
+text-align:center;
+}
+
+.contenedor-formulario{
+padding:20px;
+}
+
+.formulario{
+width:100%;
+max-width:350px;
+}
+
+.footer-top{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+}
